@@ -109,3 +109,68 @@ const [one, two, , , five, ...rest] = values;
 console.log(one, two, five);
 
 console.log(rest);
+
+// maps lesson task
+
+//     Create a new Map object called users.
+//     Add a key of 12 with the value of { firstName: "Ola", lastName: "Nordmann" }.
+//     Log the size of the Map to the console.
+//     Add a key of 50 with the value of { firstName: "Kari", lastName: "Nordmann" }.
+//     Log the size of the Map to the console.
+//     Delete the key 12 that was added in step 2 above.
+//     Log the size of the Map to the console.
+
+const myMap = new Map();
+
+myMap.set("12", { firstName: "Ola", lastName: "Nordmann" });
+
+console.log(myMap.get("12"));
+
+console.log(myMap.size);
+
+myMap.set("50", { firstName: "Kari", lastName: "Nordmann" });
+
+console.log(myMap.size);
+
+myMap.delete("12");
+
+console.log(myMap.size);
+
+// set lesson task
+
+// Create a new set called values.
+// Try adding the following values: 1, 2, 2, 2, 3, 4.
+// Check the length of the set.
+// Check that the set has the value of 1.
+// Check that the set has the value of a.
+
+const linnSet = new Set();
+
+linnSet.add("1");
+linnSet.add("2");
+linnSet.add("2");
+linnSet.add("2");
+linnSet.add("3");
+linnSet.add("4");
+
+console.log(linnSet.size);
+
+function check() {
+  if (linnSet.has("1")) {
+    console.log("true");
+  }
+}
+
+check();
+
+const newnew = new Set();
+
+newnew.add(1);
+newnew.add(2);
+newnew.add(3);
+
+console.log(newnew.size);
+
+console.log(newnew.has(1));
+
+console.log(newnew.has("a"));
