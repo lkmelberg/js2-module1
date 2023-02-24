@@ -1,13 +1,25 @@
-// Destructure the first, second and fifth value from
-// the array. You are free to call the variables whatever
-// you would like. Once you have destructured the values,
-// log the variables so you know that you have destructured
-// them correctly.
+// maps lesson task
 
-const values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+//     Create a new Map object called users.
+//     Add a key of 12 with the value of { firstName: "Ola", lastName: "Nordmann" }.
+//     Log the size of the Map to the console.
+//     Add a key of 50 with the value of { firstName: "Kari", lastName: "Nordmann" }.
+//     Log the size of the Map to the console.
+//     Delete the key 12 that was added in step 2 above.
+//     Log the size of the Map to the console.
 
-const [one, two, , , five, ...rest] = values;
+const myMap = new Map();
 
-console.log(one, two, five);
+myMap.set("12", { firstName: "Ola", lastName: "Nordmann" });
 
-console.log(rest);
+console.log(myMap.get("12"));
+
+console.log(myMap.size);
+
+myMap.set("50", { firstName: "Kari", lastName: "Nordmann" });
+
+console.log(myMap.size);
+
+myMap.delete("12");
+
+console.log(myMap.size);
