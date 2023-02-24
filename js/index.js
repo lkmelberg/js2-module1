@@ -1,13 +1,17 @@
 /**
- * Solves equations of the form a * x = b
+ * Adds two numbers together
+ * @param {number} a First value
+ * @param {number} b Second value
+ * @returns {number} Sum of params
  * @example
- * // returns 2
- * globalNS.method1(5, 10);
- * @example
- * // returns 3
- * globalNS.method(5, 15);
- * @returns {Number} Returns the value of x for the equation.
+ * ```js
+ * // Add two numbers together
+ * const a = 1;
+ * const b = 2;
+ * const sum = okay(a, b);
+ * // expect sum to be 3
+ * ```
  */
-globalNS.method1 = function (a, b) {
-  return b / a;
-};
+export function okay(a, b) {
+  return a + b;
+}
