@@ -174,3 +174,23 @@ console.log(newnew.size);
 console.log(newnew.has(1));
 
 console.log(newnew.has("a"));
+
+// Create a class called Person.
+// It should take in firstName and lastName arguments.
+// Add a method speak that logs "Hello Ola Nordmann" if I was to supply Ola as the firstName and Nordmann as the last name.
+// Create a new instance of this class and then call the speak method from this instance.
+
+class person {
+  constructor(firstName1, lastName1) {
+    this.firstName1 = firstName1;
+    this.lastName1 = lastName1;
+  }
+
+  speak() {
+    console.log(`Hello my name is ${this.firstName1} ${this.lastName1}`);
+  }
+}
+
+const pperson = new person("Ola", "Nordmann");
+
+pperson.speak();
